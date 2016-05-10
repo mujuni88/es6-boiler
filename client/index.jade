@@ -1,0 +1,30 @@
+doctype html
+html
+	head
+		link
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		title Rxjs
+		link(rel='stylesheet', href='css/style.css')
+
+	body
+		.container
+			.header
+				h3 Who to follow
+				a.refresh(href='#') Refresh
+			ul.suggestions
+				li.suggestion1
+					img
+					a.username(href='#', target='_blank') this will not be displayed
+					= ' '
+					a.close.close1(href='#') x
+				li.suggestion2
+					img
+					a.username(href='#', target='_blank') neither this
+					= ' '
+					a.close.close2(href='#') x
+				li.suggestion3
+					img
+					a.username(href='#', target='_blank') nor this
+					= ' '
+					a.close.close3(href='#') x
+		script(type='text/javascript', src='/dist/client.bundle.js')
